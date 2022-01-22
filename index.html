@@ -19,8 +19,8 @@
     <div class="main-card">
       <div class="top-card">
         <div class="view-month-price">
-          <p><span class="number">100K</span> PAGEVIEWS</p>
-          <p><span class="price">$16.00</span> /month</p>
+          <p class="pageviews"><span class="number">100K</span> PAGEVIEWS</p>
+          <p class="price">$<span class="price-item">16</span>.00 <span id="month">/month</span></p>
         </div>
         <div class="slidercontainer">
           <input type="range" min="0" max="4" value="2" class="slider" id="myRange">
@@ -28,7 +28,7 @@
         <div class="pricing">
           <p>Monthly Billing</p>
           <label class="switch">
-            <input type="checkbox" checked>
+            <input type="checkbox" id="toggle">
             <span class="slider-round round"></span>
           </label>
           <p>Yearly Billing</p>
@@ -61,8 +61,8 @@
 
   <!-- </div> -->
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Camille Breillot</a>.</p>
   </div>
 </body>
 </html>
