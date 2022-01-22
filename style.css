@@ -53,10 +53,10 @@ h1 {
 
 
 hr {
-    height: 1px;
-    width: 100%;
-    background-color: var(--clr-empty-slider);
-    border: none;
+  height: 1px;
+  width: 100%;
+  background-color: var(--clr-empty-slider);
+  border: none;
 }
 
 .view-month-price {
@@ -173,11 +173,11 @@ hr {
 }
 
 input:checked + .slider-round {
-  background-color: #2196F3;
+  background-color: hsl(174, 86%, 45%);
 }
 
 input:focus + .slider-round {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px hsl(174, 86%, 45%);
 }
 
 input:checked + .slider-round:before {
