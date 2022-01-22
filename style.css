@@ -53,9 +53,10 @@ h1 {
 
 
 hr {
-  height: 1px;
-  width: 100%;
-  background-color: var(--clr-empty-slider);
+    height: 1px;
+    width: 100%;
+    background-color: var(--clr-empty-slider);
+    border: none;
 }
 
 .view-month-price {
@@ -249,4 +250,5 @@ input:checked + .slider-round:before {
 
 .attribution a {
   text-decoration: none;
+  color:hsl(227, 35%, 25%);
 }
