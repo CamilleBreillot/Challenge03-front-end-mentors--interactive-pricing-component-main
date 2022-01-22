@@ -17,7 +17,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   font-size: 15px;
   font-family: 'Manrope', sans-serif;
@@ -26,20 +26,57 @@ body {
 
 h1 {
   color: hsl(227, 35%, 25%);
+  font-size: 24px;
+}
+
+.head {
+  text-align: center;
+  background-image: url(images/pattern-circles.svg);
+  background-repeat:no-repeat;
+  background-position: 50% 50%;
+  background-size: 30%;
+  line-height: 1.5em;
+  padding: 20px;
 }
 
 .main-card {
   background-color: white;
   display: flex;
   flex-direction: column;
+  width: 35%;
+  padding: 30px;
+  border-radius: 3%;
+  background-color: var(--clr-base-white);
+  box-shadow: 0px 10px 16px 2px rgba(64, 60, 122, 0.103);
+}
+
+.top-card {
+  width: 100%;
+}
+
+hr {
+  height: 1px;
+  width: 100%;
+  background-color: var(--clr-empty-slider);
+  border: none;
+  margin: 1.5em 0;
+}
+
+.view-month-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price {
+  font-size: 30px;
+  color:hsl(227, 35%, 25%);
+  font-weight: bolder;
 }
 
 .slider {
-    cursor: pointer;
     -webkit-appearance: none;
     width: 100%;
     padding: 0;
-    margin: 6% 4%;
     height: 8px;
     border-radius: 1em;
     border: none;
@@ -70,12 +107,35 @@ h1 {
   cursor: pointer;
 }
 
+.bottom-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.feature {
+  font-size: 10px;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+}
+
+.feature i {
+  color: var(--clr-full-slider);
+  margin-right: 10px;
+}
+
+.feature p {
+  margin: 4px;
+}
+
 .button {
   color: hsl(226, 100%, 87%);
   border-radius: 25px;
   background-color: hsl(227, 35%, 25%);
   padding: 1em 3.5em;
-  margin: 2em;
+  margin: 4em;
   text-decoration: none;
   font-size: 0.75em;
   font-weight: 800;
