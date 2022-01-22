@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+:root{
+    --clr-text-primary:hsl(225, 20%, 60%) ;
+    --clr-secondary: hsl(227, 35%, 25%);
+    --clr-empty-slider: hsl(224, 65%, 95%);
+    --clr-full-slider: hsl(173, 69%, 75%);
+    --clr-slider-bg: hsl(174, 86%, 38%);
+    --clr-base-white: hsl(0, 0%, 100%);
+    --clr-base-black: hsl(0, 100%, 100%);
+
+    --ff-primary: 'Manrope', sans-serif;
+}
+
+body {
+  background-image: url("images/bg-pattern.svg");
+  background-repeat:no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 15px;
+  font-family: 'Manrope', sans-serif;
+  color: hsl(225, 20%, 60%);
+}
+
+h1 {
+  color: hsl(227, 35%, 25%);
+  font-size: 24px;
+}
+
+.head {
+  text-align: center;
+  background-image: url(images/pattern-circles.svg);
+  background-repeat:no-repeat;
+  background-position: 50% 50%;
+  background-size: 30%;
+  line-height: 1.5em;
+  padding: 20px;
+}
+
+.main-card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height: 46%;
+  padding: 10px 30px 30px;
+  border-radius: 3%;
+  background-color: var(--clr-base-white);
+  box-shadow: 0px 10px 16px 2px rgba(64, 60, 122, 0.103);
+}
+
+
+hr {
+  height: 1px;
+  width: 100%;
+  background-color: var(--clr-empty-slider);
+  border: none;
+}
+
+.view-month-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pageviews {
+  letter-spacing: 2px;
+  font-weight: bolder;
+}
+
+.price {
+  font-size: 30px;
+  color:hsl(227, 35%, 25%);
+  font-weight: bolder;
+}
+
+#month {
+  font-size: 15px;
+  color: hsl(225, 20%, 60%);
+}
+
+.slidercontainer {
+  margin: 20px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    padding: 0;
+    height: 8px;
+    border-radius: 1em;
+    border: none;
+    background: linear-gradient(to right, var(--clr-full-slider) 50%, var(--clr-empty-slider) 50%);
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 30px; /* Set a specific slider handle width */
+  height: 30px;
+  border-radius: 50%;
+  background: var(--clr-full-slider);
+  cursor: pointer; /* Cursor on hover */
+  background-image: url(images/icon-slider.svg);
+  background-repeat:no-repeat;
+  background-position: 50% 50%;
+  background-size: 1.5em;
+  box-shadow: 0 1em 15px 1px var(--clr-full-slider);
+}
+
+.slider::-webkit-slider-thumb:active {
+  background-color: hsl(174, 86%, 45%);
+}
+
+.pricing {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin: 15px 0px;
+  margin-right: 35px;
+}
+
+.pricing p {
+  font-size: 10px;
+  padding: 2px 10px ;
+}
+
+.discount {
+  background-color: hsl(14, 92%, 95%);
+  color: hsl(15, 100%, 70%);
+  border-radius: 8px;
+}
+
+/*toggle*/
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 38px;
+  height: 17px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider-round {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider-round:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 15px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider-round {
+  background-color: hsl(174, 86%, 45%);
+}
+
+input:focus + .slider-round {
+  box-shadow: 0 0 1px hsl(174, 86%, 45%);
+}
+
+input:checked + .slider-round:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(18px);
+}
+
+/* Rounded sliders */
+.slider-round.round {
+  border-radius: 34px;
+}
+
+.slider-round.round:before {
+  border-radius: 50%;
+}
+
+
+.reset-style {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.bottom-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.feature {
+  font-size: 10px;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+}
+
+.feature i {
+  color: var(--clr-full-slider);
+  margin-right: 10px;
+}
+
+.feature p {
+  margin: 4px;
+}
+
+.button {
+  color: hsl(226, 100%, 87%);
+  border-radius: 25px;
+  background-color: hsl(227, 35%, 25%);
+  padding: 1em 3.5em;
+  margin: 4em;
+  text-decoration: none;
+  font-size: 0.75em;
+  font-weight: 800;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.attribution {
+  text-align: center;
+  margin-top: 48px;
+  padding-bottom: 40px;
+}
+
+.attribution a {
+  text-decoration: none;
+  color:hsl(227, 35%, 25%);
+}

@@ -3,37 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <script src="https://kit.fontawesome.com/828e939a75.js" crossorigin="anonymous"></script>
+  <link href="./style.css" rel="stylesheet" type="text/css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive pricing component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <script type="text/javascript" src="main.js" defer></script>
+  <title>Frontend Mentor | Interactive pricing component</title>
 </head>
 <body>
+  <!-- <div class="wrapper"> -->
+    <div class="head">
+      <h1>Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-day trial. No credit card required.</p>
+    </div>
+    <div class="main-card">
+      <div class="top-card">
+        <div class="view-month-price">
+          <p class="pageviews"><span class="number">100K</span> PAGEVIEWS</p>
+          <p class="price">$<span class="price-item">16</span>.00 <span id="month">/month</span></p>
+        </div>
+        <div class="slidercontainer">
+          <input type="range" min="0" max="4" value="2" class="slider" id="myRange">
+        </div>
+        <div class="pricing">
+          <p>Monthly Billing</p>
+          <label class="switch">
+            <input type="checkbox" id="toggle">
+            <span class="slider-round round"></span>
+          </label>
+          <p>Yearly Billing</p>
+          <p class="discount">25% discount</p>
+        </div>
+      </div>
+      <hr>
+      <div class="bottom-card">
+        <div class="features">
+          <div class="feature">
+            <i class="fas fa-check"></i>
+            <p>Unlimited websites</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-check"></i>
+            <p>100% data ownership</p>
+          </div>
+          <div class="feature">
+            <i class="fas fa-check"></i>
+            <p>Email reports</p>
+          </div>
+        </div>
+        <button class="reset-style button">
+          Start my trial
+        </button>
+      </div>
 
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
+    </div>
 
-  Pageviews
-  $ /month
 
-  Monthly Billing
-  Yearly Billing 25% discount
-
-  Unlimited websites
-  100% data ownership
-  Email reports
-
-  Start my trial
-  
+  <!-- </div> -->
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Camille Breillot</a>.</p>
   </div>
 </body>
 </html>
